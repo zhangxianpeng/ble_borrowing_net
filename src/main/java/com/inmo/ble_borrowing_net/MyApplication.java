@@ -1,0 +1,13 @@
+package com.inmo.ble_borrowing_net;
+
+import android.app.Application;
+import android.content.Context;
+
+public class MyApplication extends Application {
+    public static Context instance;
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        instance = getApplicationContext();
+    }
+}
